@@ -4,10 +4,12 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Convert between human-readable dates and Unix timestamps
-// @author       You
+// @author       Blake Smith (and Claude 3.7)
 // @match        *://*/*
 // @grant        GM_registerMenuCommand
 // @grant        GM_addStyle
+// @updateURL    https://github.com/BlakeASmith/dateconverter/raw/refs/heads/main/public/dateconverter.user.js
+// @downloadURL  https://github.com/BlakeASmith/dateconverter/raw/refs/heads/main/public/dateconverter.user.js
 // ==/UserScript==
 
 (function() {
