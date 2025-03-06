@@ -20,7 +20,7 @@ const server = serve({
     }
     
     // Serve a simple landing page with installation link
-    if (url.pathname === "/dateconverter" || url.pathname === "/dateconverter/index.html") {
+    if (url.pathname === "/dateconverter/" || url.pathname === "/dateconverter/index.html") {
       return new Response(`
         <!DOCTYPE html>
         <html lang="en">
