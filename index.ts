@@ -1,12 +1,12 @@
 import { serve } from "bun";
 
 const server = serve({
-  port: 3000,
+  port: 3001,
   fetch(req) {
     const url = new URL(req.url);
     
     // Handle the userscript route
-    if (url.pathname === "/tampermonkey/dateconverter.user.js") {
+    if (url.pathname === "/dateconverter/dateconverter.user.js") {
       // Read the userscript file
       const userscript = Bun.file("./public/dateconverter.user.js");
       
@@ -20,7 +20,7 @@ const server = serve({
     }
     
     // Serve a simple landing page with installation link
-    if (url.pathname === "/" || url.pathname === "/index.html") {
+    if (url.pathname === "/dateconverter" || url.pathname === "/dateconverter/index.html") {
       return new Response(`
         <!DOCTYPE html>
         <html lang="en">
