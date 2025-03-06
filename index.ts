@@ -20,7 +20,7 @@ const server = serve({
     }
     
     // Serve a simple landing page with installation link
-    if (url.pathname === "/dateconverter/" || url.pathname === "/dateconverter/index.html") {
+    if (url.pathname === "/dateconverter/" || url.pathname === "/dateconverter" || url.pathname === "/dateconverter/index.html") {
       return new Response(`
         <!DOCTYPE html>
         <html lang="en">
@@ -68,7 +68,7 @@ const server = serve({
           <h1>Date Converter Userscript</h1>
           <p>This userscript allows you to convert between Unix timestamps and human-readable dates by selecting text on any webpage.</p>
           
-          <a href="/tampermonkey/dateconverter.user.js" class="install-btn">Install Userscript</a>
+          <a href="/dateconverter/dateconverter.user.js" class="install-btn">Install Userscript</a>
           
           <div class="features">
             <h2>Features:</h2>
